@@ -1,0 +1,1 @@
+vite react tailwind shadcn typescript framer motion etc.
