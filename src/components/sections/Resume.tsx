@@ -10,7 +10,6 @@ export default function Resume() {
                 </div>
 
                 <div className="">
-
                 </div>
             </div>
         </div>

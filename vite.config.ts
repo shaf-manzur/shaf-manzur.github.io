@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  appType: 'mpa', // disable history fallback
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
