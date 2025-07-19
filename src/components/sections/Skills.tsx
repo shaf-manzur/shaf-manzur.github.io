@@ -1,3 +1,13 @@
+import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
 const skills = {
     languages: [
         ["JavaScript", "100%"],
@@ -31,11 +41,34 @@ const skills = {
     ]
 };
 
-
 export default function Skills() {
     return (
-        <div id="skills" className="min-h-screen w-full flex items-center justify-center bg-gray-200 p-16">
-            <h1 className="text-6xl font-bold text-gray-800">Skills</h1>
+        <div id="skills">
+            <div>
+                <div className="py-4">
+                    <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+                        <span className="text-primary font-display">Skills</span>
+                    </h2>
+                    <p className="text-sm max-w-2xl">Technical expertise and proficiency levels across various programming languages, frameworks, and tools.</p>
+                </div>
+
+                <div className="">
+                    {/* Skills content */}
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Card Title</CardTitle>
+                            <CardDescription>Card Description</CardDescription>
+                            <CardAction>Card Action</CardAction>
+                        </CardHeader>
+                        <CardContent>
+                            <p>Card Content</p>
+                        </CardContent>
+                        <CardFooter>
+                            <p>Card Footer</p>
+                        </CardFooter>
+                    </Card>
+                </div>
+            </div>
         </div>
     );
 }
