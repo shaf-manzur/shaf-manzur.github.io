@@ -1,6 +1,5 @@
 import {
     Card,
-    CardAction,
     CardContent,
     CardDescription,
     CardFooter,
@@ -9,7 +8,6 @@ import {
 } from "@/components/ui/card"
 
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 const projects = [
@@ -19,7 +17,7 @@ const projects = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         github: "https://www.google.com",
         demo: "https://www.google.com",
-        video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     {
         name: "Project 2",
@@ -27,18 +25,19 @@ const projects = [
         description: "Description of project 2",
         github: "https://www.google.com",
         demo: "https://www.google.com",
-        video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    }
+        video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
 ]
 
 export default function Projects() {
     return (
-        <div id="projects" className="min-h-screen w-full py-16 lg:py-24">
-            <div className="max-w-6xl mx-auto px-4 lg:px-8">
-                <div className="mb-12 lg:mb-16">
+        <div id="projects">
+            <div>
+                <div className="py-4">
                     <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
                         <span className="text-primary font-display">Projects</span>
                     </h2>
+                    <p className="text-sm max-w-2xl">A selection of my best work that reflects my skills and experience in Software Engineering. Each project was completed with great attention to detail and using modern technologies.</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6">
@@ -58,13 +57,13 @@ export default function Projects() {
                                     </CardContent>
                                     <CardFooter className="flex gap-3 pb-4 lg:pb-0">
                                         <Button asChild>
-                                            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                                GitHub
+                                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                                Demo
                                             </a>
                                         </Button>
                                         <Button variant="outline" asChild>
-                                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                                                Demo
+                                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                                GitHub
                                             </a>
                                         </Button>
                                     </CardFooter>
