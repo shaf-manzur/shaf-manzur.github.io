@@ -40,7 +40,7 @@ export default function Resume() {
                 </div>
 
                 <div className="mt-6">
-                    {loadPDF ? (
+                    {/* {loadPDF ? (
                         <iframe
                             src="/Resume.pdf"
                             width="100%"
@@ -54,7 +54,7 @@ export default function Resume() {
                         <div className="border border-border flex items-center justify-center bg-muted">
                             <p className="text-muted-foreground">Loading resume...</p>
                         </div>
-                    )}
+                    )} */}
                 </div>
             </div>
         </div>
