@@ -10,7 +10,16 @@ import {
 import { Button } from "@/components/ui/button"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
-const projects = [
+interface Project {
+    name: string;
+    stack: string[];
+    description: string;
+    github: string;
+    demo: string;
+    video: string;
+}
+
+const projects: Project[] = [
     {
         name: "Project 1",
         stack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],

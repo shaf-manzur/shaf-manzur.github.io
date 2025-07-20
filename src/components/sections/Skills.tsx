@@ -1,45 +1,53 @@
-import {
-    Card,
-    CardAction,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
+interface SkillCategory {
+    name: string;
+    skills: [string, number][];
+}
 
-const skills = {
-    languages: [
-        ["JavaScript", "100%"],
-        ["Python", "95%"],
-        ["C/C++", "90%"],
-        ["Java", "70%"],
-        ["Dart", "60%"],
-        ["Haskell", "50%"]
-    ],
-    frameworks: [
-        ["React", "100%"],
-        ["NextJs", "90%"],
-        ["FastAPI", "90%"],
-        ["Flask", "85%"],
-        ["Express.Js", "80%"]
-    ],
-    databases: [
-        ["Firebase", "100%"],
-        ["Redis", "90%"],
-        ["Milvus", "80%"],
-        ["PostgreSQL", "70%"],
-        ["Pinecone", "20%"]
-    ],
-    libraries: [
-        ["Material UI", "100%"],
-        ["Tensorflow", "90%"],
-        ["Keras", "80%"],
-        ["Pandas", "70%"],
-        ["NumPy", "70%"],
-        ["Matplotlib", "60%"]
-    ]
-};
+const skills: SkillCategory[] = [
+    {
+        name: "Languages",
+        skills: [
+            ["JavaScript", 100],
+            ["Python", 95],
+            ["C/C++", 90],
+            ["Java", 70],
+            ["Dart", 60],
+            ["Haskell", 50]
+        ]
+    },
+    {
+        name: "Frameworks",
+        skills: [
+            ["React", 100],
+            ["NextJs", 90],
+            ["FastAPI", 90],
+            ["Flask", 85],
+            ["Express.Js", 80]
+        ]
+    },
+    {
+        name: "Databases",
+        skills: [
+            ["Firebase", 100],
+            ["Redis", 90],
+            ["Milvus", 80],
+            ["PostgreSQL", 70],
+            ["Pinecone", 20]
+        ]
+    },
+    {
+        name: "Libraries",
+        skills: [
+            ["Material UI", 100],
+            ["Tensorflow", 90],
+            ["Keras", 80],
+            ["Pandas", 70],
+            ["NumPy", 70],
+            ["Matplotlib", 60]
+        ]
+    }
+];
+
 
 export default function Skills() {
     return (
@@ -54,19 +62,7 @@ export default function Skills() {
 
                 <div className="">
                     {/* Skills content */}
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Card Title</CardTitle>
-                            <CardDescription>Card Description</CardDescription>
-                            <CardAction>Card Action</CardAction>
-                        </CardHeader>
-                        <CardContent>
-                            <p>Card Content</p>
-                        </CardContent>
-                        <CardFooter>
-                            <p>Card Footer</p>
-                        </CardFooter>
-                    </Card>
+
                 </div>
             </div>
         </div>
