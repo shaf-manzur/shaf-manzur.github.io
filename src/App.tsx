@@ -1,5 +1,5 @@
 import Header from "@/components/header/header"
-import Hero from "@/components/sections/Hero"
+import Hero from "@/components/common/Hero"
 import Skills from "@/components/sections/Skills"
 import Projects from "@/components/sections/Projects"
 import Education from "@/components/sections/Education"

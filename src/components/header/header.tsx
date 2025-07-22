@@ -1,11 +1,17 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
+import { motion } from "motion/react";
 import Dropdown from "./dropdown";
 
 export default function Header() {
     return (
-        <header className="w-full p-4">
+        <motion.header
+            className="w-full p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+        >
             <nav className="flex justify-between items-center">
                 <div className="flex space-x-4">
                     <FaGithub className="w-6 h-6" />
@@ -26,6 +32,6 @@ export default function Header() {
                     <a href="#resume">Resume</a>
                 </div>
             </nav>
-        </header>
+        </motion.header>
     );
 }
