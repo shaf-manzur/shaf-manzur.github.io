@@ -4,7 +4,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar"
 
 const hero = {
     name: "Shaf Manzur",
-    description: "A BSCS student at SUNY University at Buffalo, bridging machine learning with full-stack web development to engineer innovative, user-centric solutions. Equipped with a powerful stack; NextJS, FastAPI, and Firebase, I thrive in hackathon environments that demand both speed and creativity. Join me as I turn ideas into impactful digital experiences!",
+    description: "A BSCS student at SUNY University at Buffalo, bridging machine learning with full-stack web development",
     location: "New York, NY"
 }
 
@@ -28,13 +28,13 @@ export default function Hero() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Contact Me
+                            Contact
                         </a>
                     </Button>
                 </div>
                 <div className="flex-shrink-0">
                     <Avatar className="size-64">
-                        <AvatarImage src="/src/assets/profile.jpg" />
+                        <AvatarImage src="/profile.jpg" />
                     </Avatar>
                 </div>
             </div>

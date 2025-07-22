@@ -14,14 +14,14 @@ const education = [
         degree: "High School Diploma",
         year: "2017-2021",
         grad: "June 2021",
-        image: "src/assets/Stuy_logo.png"
+        image: "/Stuy_logo.png"
     },
     {
         name: "SUNY University at Buffalo",
         degree: "Bachelor of Science in Computer Science",
         year: "2022-2026",
         grad: "May 2026",
-        image: "src/assets/UB_logo.png"
+        image: "/UB_logo.png"
     },
 
 ]
