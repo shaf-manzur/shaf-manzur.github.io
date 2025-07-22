@@ -7,7 +7,7 @@ import Dropdown from "./dropdown";
 export default function Header() {
     return (
         <motion.header
-            className="w-full p-4"
+            className="w-full p-4 lg:py-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

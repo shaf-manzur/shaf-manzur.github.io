@@ -9,6 +9,7 @@ import {
 
 import { Button } from "@/components/ui/button"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
+import AppSection from "@/components/common/appSection"
 
 interface Project {
     name: string;
@@ -40,61 +41,56 @@ const projects: Project[] = [
 
 export default function Projects() {
     return (
-        <div id="projects">
-            <div>
-                <div className="py-4">
-                    <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-                        <span className="text-primary font-display">Projects</span>
-                    </h2>
-                    <p className="text-sm max-w-2xl">A selection of my best work that reflects my skills and experience in Software Engineering. Each project was completed with great attention to detail and using modern technologies.</p>
-                </div>
-
-                <div className="grid grid-cols-1 gap-6">
-                    {projects.map((project, index) => (
-                        <Card key={index}>
-                            <div className="flex flex-col lg:flex-row">
-                                {/* Left section - Card elements */}
-                                <div className="flex-1 lg:flex-none lg:w-1/2">
-                                    <CardHeader>
-                                        <CardTitle>{project.name}</CardTitle>
-                                        <CardDescription>
-                                            {project.stack.join(' / ')}
-                                        </CardDescription>
-                                    </CardHeader>
-                                    <CardContent className="py-4">
-                                        <p>{project.description}</p>
-                                    </CardContent>
-                                    <CardFooter className="flex gap-3 pb-4 lg:pb-0">
-                                        <Button asChild>
-                                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                                                Demo
-                                            </a>
-                                        </Button>
-                                        <Button variant="outline" asChild>
-                                            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                                GitHub
-                                            </a>
-                                        </Button>
-                                    </CardFooter>
-                                </div>
-
-                                <div className="flex-1 lg:flex-none lg:w-1/2">
-                                    <CardContent>
-                                        <AspectRatio ratio={16 / 9}>
-                                            <iframe
-                                                src={`https://www.youtube.com/embed/${project.video.split('v=')[1]}`}
-                                                title={`${project.name} demo video`}
-                                                className="w-full h-full"
-                                                allowFullScreen
-                                            />
-                                        </AspectRatio>
-                                    </CardContent>
-                                </div>
+        <AppSection
+            id="projects"
+            title="Projects"
+            description="A selection of my best work that reflects my skills and experience in Software Engineering. Each project was completed with great attention to detail and using modern technologies."
+        >
+            <div className="grid grid-cols-1 gap-6">
+                {projects.map((project, index) => (
+                    <Card key={index}>
+                        <div className="flex flex-col lg:flex-row">
+                            {/* Left section - Card elements */}
+                            <div className="flex-1 lg:flex-none lg:w-1/2">
+                                <CardHeader>
+                                    <CardTitle>{project.name}</CardTitle>
+                                    <CardDescription>
+                                        {project.stack.join(' / ')}
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="py-4">
+                                    <p>{project.description}</p>
+                                </CardContent>
+                                <CardFooter className="flex gap-3 pb-4 lg:pb-0">
+                                    <Button asChild>
+                                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                            Demo
+                                        </a>
+                                    </Button>
+                                    <Button variant="outline" asChild>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                            GitHub
+                                        </a>
+                                    </Button>
+                                </CardFooter>
                             </div>
-                        </Card>
-                    ))}
-                </div>
+
+                            <div className="flex-1 lg:flex-none lg:w-1/2">
+                                <CardContent>
+                                    <AspectRatio ratio={16 / 9}>
+                                        <iframe
+                                            src={`https://www.youtube.com/embed/${project.video.split('v=')[1]}`}
+                                            title={`${project.name} demo video`}
+                                            className="w-full h-full"
+                                            allowFullScreen
+                                        />
+                                    </AspectRatio>
+                                </CardContent>
+                            </div>
+                        </div>
+                    </Card>
+                ))}
             </div>
-        </div>
+        </AppSection>
     );
 }

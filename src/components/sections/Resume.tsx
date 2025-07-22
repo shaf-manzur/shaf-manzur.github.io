@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import AppSection from "@/components/common/appSection"
 
 export default function Resume() {
     const [loadPDF, setLoadPDF] = useState(false);
@@ -30,15 +31,12 @@ export default function Resume() {
     }, []);
 
     return (
-        <div id="resume" ref={resumeRef}>
-            <div>
-                <div className="py-4">
-                    <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-                        <span className="text-primary font-display">Resume</span>
-                    </h2>
-                    <p className="text-sm max-w-2xl">Professional experience, achievements, and qualifications showcasing my journey in software development.</p>
-                </div>
-
+        <div ref={resumeRef}>
+            <AppSection
+                id="resume"
+                title="Resume"
+                description="Professional experience, achievements, and qualifications showcasing my journey in software development."
+            >
                 <div className="mt-6">
                     {/* {loadPDF ? (
                         <iframe
@@ -56,7 +54,7 @@ export default function Resume() {
                         </div>
                     )} */}
                 </div>
-            </div>
+            </AppSection>
         </div>
     );
 }
