@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 interface SkillCategoryData {
     name: string;
     skills: [string, number][];
@@ -24,10 +26,16 @@ export default function SkillCategory({ category }: SkillCategoryProps) {
                                 {percentage}%
                             </span>
                         </div>
-                        <div className="w-full bg-muted h-2 rounded-full overflow-hidden">
-                            <div
+                        <div className="w-full bg-muted h-3 rounded-full overflow-hidden">
+                            <motion.div
                                 className="h-full bg-primary rounded-full"
-                                style={{ width: `${percentage}%` }}
+                                initial={{ width: "0%" }}
+                                animate={{ width: `${percentage}%` }}
+                                transition={{
+                                    duration: 3,
+                                    delay: 5 + skillIndex * 0.3,
+                                    ease: "easeInOut"
+                                }}
                             />
                         </div>
                     </div>
