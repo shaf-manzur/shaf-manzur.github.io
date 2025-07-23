@@ -30,10 +30,11 @@ export default function SkillCategory({ category }: SkillCategoryProps) {
                             <motion.div
                                 className="h-full bg-primary rounded-full"
                                 initial={{ width: "0%" }}
-                                animate={{ width: `${percentage}%` }}
+                                whileInView={{ width: `${percentage}%` }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{
-                                    duration: 3,
-                                    delay: 5 + skillIndex * 0.3,
+                                    duration: 2,
+                                    delay: skillIndex * 0.3,
                                     ease: "easeInOut"
                                 }}
                             />
