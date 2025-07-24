@@ -45,7 +45,7 @@ export default function Hero() {
     }
 
     return (
-        <div id="hero" className="lg:py-60 relative min-h-screen lg:min-h-0 flex flex-col justify-center lg:justify-start">
+        <div id="hero" className="lg:py-40 relative min-h-screen lg:min-h-0 flex flex-col justify-center lg:justify-start">
             <div className="flex flex-col items-center text-center lg:flex-row lg:text-left lg:items-center lg:justify-between gap-8">
                 <div className="flex-1">
                     <h1 className="text-5xl font-bold text-foreground mb-2">

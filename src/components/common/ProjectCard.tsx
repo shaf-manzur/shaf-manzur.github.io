@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 
 import { Button } from "@/components/ui/button"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Project } from "@/lib/types"
 
 interface ProjectCardProps {
@@ -21,7 +22,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {/* Left section - Card elements */}
                 <div className="flex-1 lg:flex-none lg:w-1/2">
                     <CardHeader>
-                        <CardTitle>{project.name}</CardTitle>
+                        <CardTitle className="text-3xl">{project.name}</CardTitle>
                         <CardDescription>
                             {project.stack.join(' / ')}
                         </CardDescription>
@@ -56,11 +57,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
                 <div className="flex-1 lg:flex-none lg:w-1/2">
                     <CardContent>
-                        <img
-                            src={project.image}
-                            alt={`${project.name} screenshot`}
-                            className="w-full h-full object-cover rounded-md"
-                        />
+                        <AspectRatio ratio={16 / 9}>
+                            <img
+                                src={project.image}
+                                alt={`${project.name} screenshot`}
+                                className="w-full h-full object-cover rounded-md"
+                            />
+                        </AspectRatio>
                     </CardContent>
                 </div>
             </div>
