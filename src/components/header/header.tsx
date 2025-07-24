@@ -14,9 +14,15 @@ export default function Header() {
         >
             <nav className="flex justify-between items-center">
                 <div className="flex space-x-4">
-                    <FaGithub className="w-6 h-6" />
-                    <FaLinkedin className="w-6 h-6" />
-                    <SiDevpost className="w-6 h-6" />
+                    <a href="https://github.com/freshfriedfish/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <FaGithub className="w-6 h-6 text-foreground hover:text-primary transition-colors" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/shafmanzur/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <FaLinkedin className="w-6 h-6 text-foreground hover:text-primary transition-colors" />
+                    </a>
+                    <a href="https://devpost.com/freshfriedfish" target="_blank" rel="noopener noreferrer" aria-label="Devpost">
+                        <SiDevpost className="w-6 h-6 text-foreground hover:text-primary transition-colors" />
+                    </a>
                 </div>
 
                 {/* Mobile dropdown - visible on mobile, hidden on desktop */}
@@ -25,11 +31,11 @@ export default function Header() {
                 </div>
 
                 {/* Desktop navigation - hidden on mobile, visible on desktop */}
-                <div className="hidden lg:flex space-x-8 font-display">
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#resume">Resume</a>
+                <div className="hidden lg:flex space-x-8 font-display text-lg">
+                    <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+                    <a href="#education" className="hover:text-primary transition-colors">Education</a>
+                    <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+                    <a href="#resume" className="hover:text-primary transition-colors">Resume</a>
                 </div>
             </nav>
         </motion.header>

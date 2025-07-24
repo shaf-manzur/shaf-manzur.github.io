@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react"
 
 const hero = {
     name: "Shaf Manzur",
-    description: "A BSCS student at SUNY University at Buffalo, bridging machine learning with full-stack web development",
+    description: "A CS student at UB, blending machine learning with full-stack web development. With a toolkit spanning NextJS, ExpressJS, and Google Cloud, I refine my skills through intense hackathons.",
     location: "New York, NY"
 }
 
