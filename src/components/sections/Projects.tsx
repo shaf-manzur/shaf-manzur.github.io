@@ -8,6 +8,7 @@ const projects: Project[] = [
         stack: ["Vite", "React.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
         description: "A local-only CLI tool that visualizes a Claude AI data export (users.json, projects.json, conversations.json) via a sleek dark-themed React UI served from a tiny embedded HTTP server. Everything is pre-built and shipped as static assets, use npx gpt-studio to use.",
         image: "studio.jpg",
+        demo: "https://airismlabs.github.io/demo/",
     },
     {
         name: "claude-tokenizer",
