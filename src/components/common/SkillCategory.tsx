@@ -19,10 +19,10 @@ export default function SkillCategory({ category }: SkillCategoryProps) {
                 {category.skills.map(([skillName, percentage], skillIndex) => (
                     <div key={skillIndex} className="space-y-1">
                         <div className="flex justify-between items-center">
-                            <span className="text-muted-foreground font-medium">
+                            <span className="text-md">
                                 {skillName}
                             </span>
-                            <span className="text-xs text-muted-foreground">
+                            <span className="text-xs ">
                                 {percentage}%
                             </span>
                         </div>

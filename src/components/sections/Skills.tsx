@@ -44,7 +44,7 @@ const skills: SkillCategoryData[] = [
         "name": "AI/ML & Libraries",
         "skills": [
             ["Vercel AI SDK", 100],
-            ["OpenAI", 90],
+            ["OpenAI API", 90],
             ["Tailwind CSS", 80],
             ["Shadcn UI", 80],
             ["NumPy", 60],

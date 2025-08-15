@@ -48,7 +48,7 @@ export default function Education() {
                             />
                         </CardContent>
                         <CardFooter>
-                            <p>{edu.year} • {edu.grad}</p>
+                            <p>{edu.grad}</p>
                         </CardFooter>
                     </Card>
                 ))}

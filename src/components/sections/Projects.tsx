@@ -3,13 +3,7 @@ import ProjectCard from "@/components/common/ProjectCard"
 import { Project } from "@/lib/types"
 
 const projects: Project[] = [
-    {
-        name: "gpt-studio",
-        stack: ["Vite", "React.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-        description: "A local-only CLI tool that visualizes a Claude AI data export (users.json, projects.json, conversations.json) via a sleek dark-themed React UI served from a tiny embedded HTTP server. Everything is pre-built and shipped as static assets, use npx gpt-studio to use.",
-        image: "studio.jpg",
-        demo: "https://airismlabs.github.io/demo/",
-    },
+
     {
         name: "claude-tokenizer",
         stack: ["Next.js", "Tailwind CSS", "Shadcn UI", "Vercel"],
@@ -17,6 +11,20 @@ const projects: Project[] = [
         demo: "https://claude-tokenizer.vercel.app/",
         github: "https://github.com/freshfriedfish/claude-tokenizer",
         image: "ct.jpg",
+    },
+    {
+        name: "osu!Gallery",
+        stack: ["TypeScript", "Next.js", "Tailwind CSS", "Shadcn UI", "Drizzle ORM", "Neon (PostgreSQL)", "NextAuth.js", "Vercel"],
+        description: "Osu!Gallery (stylized as osu!) is a Next.js 15 web app focused on osu! slider art. Users sign in via osu! and can upload, browse, and interact with artwork pages in addition with the ability to tag, comment, and favorite. All activity is saved in Neon Postgres. Full-text search lets players quickly find their desired artwork.",
+        demo: "https://osugallery.com/",
+        image: "osugallerylander.jpg",
+    },
+    {
+        name: "gpt-studio",
+        stack: ["Vite", "React.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+        description: "A local-only CLI tool that visualizes a Claude AI data export (users.json, projects.json, conversations.json) via a sleek dark-themed React UI served from a tiny embedded HTTP server. Everything is pre-built and shipped as static assets, use npx gpt-studio to use.",
+        image: "studio.jpg",
+        demo: "https://airismlabs.github.io/demo/",
     },
     {
         name: "SVGen",
@@ -33,13 +41,6 @@ const projects: Project[] = [
         demo: "https://freshfriedfish.github.io/radial-designer/",
         github: "https://github.com/freshfriedfish/radial-designer",
         image: "rad-deg-example1.jpg",
-    },
-    {
-        name: "osu!Gallery",
-        stack: ["TypeScript", "Next.js", "Tailwind CSS", "Shadcn UI", "Drizzle ORM", "Neon (PostgreSQL)", "NextAuth.js", "Vercel"],
-        description: "Osu!Gallery (stylized as osu!) is a Next.js 15 web app focused on osu! slider art. Users sign in via osu! and can upload, browse, and interact with artwork pages in addition with the ability to tag, comment, and favorite. All activity is saved in Neon Postgres. Full-text search lets players quickly find their desired artwork.",
-        demo: "https://osugallery.com/",
-        image: "osugallerylander.jpg",
     },
     {
         name: "CommunitySOS",
