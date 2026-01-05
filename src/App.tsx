@@ -15,7 +15,6 @@ export default function App() {
           <Projects />
           <Education />
           <Skills />
-          <Resume />
         </div>
       </div>
     </div>
