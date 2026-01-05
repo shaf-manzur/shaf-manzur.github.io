@@ -5,6 +5,14 @@ import { Project } from "@/lib/types"
 const projects: Project[] = [
 
     {
+        name: "Metal Pipe",
+        stack: ["Flutter", "Dart"],
+        description: "Metal Pipe is a fun sound generator application that plays random sounds at customizable intervals. Choose from preset sounds or upload your own audio file to create a unique experience.",
+        demo: "https://shaf.fun/metalpipe",
+        github: "https://shaf.fun/metalpipe/download",
+        image: "metalpipe.jpg",
+    },
+    {
         name: "claude-tokenizer",
         stack: ["Next.js", "Tailwind CSS", "Shadcn UI", "Vercel"],
         description: "The official unofficial Claude 4 tokenizer. Uses Anthropic's tokenizer API for the latest models.",
